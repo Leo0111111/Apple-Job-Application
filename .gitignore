@@ -1,0 +1,55 @@
+# Environment & secrets
+.env
+.env.*
+*.env
+profiles.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# dbt
+dbt_packages/
+dbt_modules/
+target/
+logs/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.cursor/
+.idea/
+*.swp
+*.swo
+
+# Docs templates
+docs/proposal-template.md
+docs/project-requirements.md
+
+# Data files (keep raw sources in knowledge/raw but exclude large dumps)
+*.csv
+*.parquet
+*.json
+!knowledge/raw/*.json
+!knowledge/raw/*.md
