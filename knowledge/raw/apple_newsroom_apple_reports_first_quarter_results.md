@@ -1,0 +1,33 @@
+# Apple reports first quarter results
+
+**Source:** apple_newsroom  
+**URL:** https://www.apple.com/newsroom/2024/02/apple-reports-first-quarter-results/  
+**Scraped:** 2026-04-27  
+**Words:** 373
+
+---
+
+PRESS RELEASE
+February 1, 2024
+Apple reports first quarter results
+Services revenue reaches new all-time record
+EPS up 16 percent to new all-time high
+CUPERTINO, CALIFORNIA
+Apple today announced financial results for its fiscal 2024 first quarter ended December 30, 2023. The Company posted quarterly revenue of $119.6 billion, up 2 percent year over year, and quarterly earnings per diluted share of $2.18, up 16 percent year over year.
+“Today Apple is reporting revenue growth for the December quarter fueled by iPhone sales, and an all-time revenue record in Services,” said Tim Cook, Apple’s CEO. “We are pleased to announce that our installed base of active devices has now surpassed 2.2 billion, reaching an all-time high across all products and geographic segments. And as customers begin to experience the incredible Apple Vision Pro tomorrow, we are committed as ever to the pursuit of groundbreaking innovation — in line with our values and on behalf of our customers.”
+“Our December quarter top-line performance combined with margin expansion drove an all-time record EPS of $2.18, up 16 percent from last year,” said Luca Maestri, Apple’s CFO. “During the quarter, we generated nearly $40 billion of operating cash flow, and returned almost $27 billion to our shareholders. We are confident in our future, and continue to make significant investments across our business to support our long-term growth plans.”
+Apple’s board of directors has declared a cash dividend of $0.24 per share of the Company’s common stock. The dividend is payable on February 15, 2024 to shareholders of record as of the close of business on February 12, 2024.
+Based on the Company’s fiscal calendar, the Company’s fiscal 2024 first quarter had 13 weeks, while the Company’s fiscal 2023 first quarter had 14 weeks.
+Apple will provide live streaming of its Q1 2024 financial results conference call beginning at 2:00 p.m. PT on February 1, 2024 at
+apple.com/investor/earnings-call
+. The webcast will be available for replay for approximately two weeks thereafter.
+Share article
+Media
+Consolidated Financial Statements
+View PDF
+Press Contact
+Apple Media Helpline
+media.help@apple.com
+Apple Media Helpline
+media.uk@apple.com
+© 2024 Apple Inc. All rights reserved. Apple and the Apple logo are trademarks of Apple. Other company and product names may be trademarks of their respective owners.
