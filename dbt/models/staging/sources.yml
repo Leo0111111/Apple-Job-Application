@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: APPLE_ANALYTICS
+    schema: RAW
+    tables:
+      - name: RAW_ITUNES_APPS
+        description: App metadata pulled from iTunes Search API
+      - name: RAW_SCRAPED_ARTICLES
+        description: Articles scraped from Apple Newsroom, Business of Apps, MacRumors
