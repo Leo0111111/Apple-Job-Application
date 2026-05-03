@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_scraped_articles
+    description: Cleaned article metadata scraped from Apple ecosystem sites
+    columns:
+      - name: source_id
+        description: Unique article identifier
+        tests:
+          - unique
+          - not_null
+      - name: title
+        tests:
+          - not_null
+      - name: site
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['apple_newsroom', 'businessofapps', 'macrumors']
