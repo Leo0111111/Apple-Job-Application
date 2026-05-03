@@ -5,8 +5,10 @@ import pandas as pd
 
 def _get_conn():
     cfg = st.secrets["snowflake"]
+    account = cfg["account"]
     return snowflake.connector.connect(
-        account=cfg["account"],
+        account=account,
+        host=f"{account}.snowflakecomputing.com",
         user=cfg["user"],
         password=cfg["password"],
         database=cfg["database"],
