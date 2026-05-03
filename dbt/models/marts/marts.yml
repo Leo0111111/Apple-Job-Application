@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_category
+    description: Category dimension table
+    columns:
+      - name: category_id
+        tests:
+          - unique
+          - not_null
+      - name: category_name
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_seller
+    description: Seller dimension table
+    columns:
+      - name: seller_id
+        tests:
+          - unique
+          - not_null
+      - name: seller_name
+        tests:
+          - not_null
+
+  - name: fct_apps
+    description: Fact table — one row per app with metrics and dimension keys
+    columns:
+      - name: app_id
+        tests:
+          - unique
+          - not_null
+      - name: price
+        tests:
+          - not_null
+      - name: rating
+        tests:
+          - not_null
