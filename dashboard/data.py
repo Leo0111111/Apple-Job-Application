@@ -30,9 +30,9 @@ def load_fct_apps() -> pd.DataFrame:
             f.rating_bucket,
             c.category_name,
             s.seller_name
-        FROM fct_apps f
-        LEFT JOIN dim_category c ON f.category_id = c.category_id
-        LEFT JOIN dim_seller s ON f.seller_id = s.seller_id
+        FROM APPLE_ANALYTICS.STAGING_MARTS.fct_apps f
+        LEFT JOIN APPLE_ANALYTICS.STAGING_MARTS.dim_category c ON f.category_id = c.category_id
+        LEFT JOIN APPLE_ANALYTICS.STAGING_MARTS.dim_seller s ON f.seller_id = s.seller_id
     """
     df = pd.read_sql(query, conn)
     conn.close()
@@ -51,8 +51,8 @@ def load_category_summary() -> pd.DataFrame:
             ROUND(AVG(f.price), 2) AS avg_price,
             SUM(CASE WHEN f.price_tier = 'Free' THEN 1 ELSE 0 END) AS free_count,
             SUM(CASE WHEN f.price_tier = 'Paid' THEN 1 ELSE 0 END) AS paid_count
-        FROM fct_apps f
-        LEFT JOIN dim_category c ON f.category_id = c.category_id
+        FROM APPLE_ANALYTICS.STAGING_MARTS.fct_apps f
+        LEFT JOIN APPLE_ANALYTICS.STAGING_MARTS.dim_category c ON f.category_id = c.category_id
         GROUP BY c.category_name
         ORDER BY app_count DESC
     """
