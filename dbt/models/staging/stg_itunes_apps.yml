@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_itunes_apps
+    description: Cleaned app records from iTunes Search API
+    columns:
+      - name: app_id
+        description: Unique iTunes app identifier
+        tests:
+          - unique
+          - not_null
+      - name: app_name
+        tests:
+          - not_null
+      - name: category
+        tests:
+          - not_null
+      - name: rating
+        tests:
+          - not_null
