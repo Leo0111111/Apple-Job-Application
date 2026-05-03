@@ -1,20 +1,9 @@
 import streamlit as st
-import snowflake.connector
 import pandas as pd
 
 
 def _get_conn():
-    cfg = st.secrets["snowflake"]
-    account = cfg["account"]
-    return snowflake.connector.connect(
-        account=account,
-        host=f"{account}.snowflakecomputing.com",
-        user=cfg["user"],
-        password=cfg["password"],
-        database=cfg["database"],
-        warehouse=cfg["warehouse"],
-        schema=cfg["schema"],
-    )
+    return st.connection("snowflake", ttl=600)
 
 
 @st.cache_data(ttl=600)
@@ -37,8 +26,7 @@ def load_fct_apps() -> pd.DataFrame:
         LEFT JOIN dim_category c ON f.category_id = c.category_id
         LEFT JOIN dim_seller s ON f.seller_id = s.seller_id
     """
-    df = pd.read_sql(query, conn)
-    conn.close()
+    df = conn.query(query, ttl=600)
     df.columns = [col.lower() for col in df.columns]
     return df
 
@@ -59,7 +47,6 @@ def load_category_summary() -> pd.DataFrame:
         GROUP BY c.category_name
         ORDER BY app_count DESC
     """
-    df = pd.read_sql(query, conn)
-    conn.close()
+    df = conn.query(query, ttl=600)
     df.columns = [col.lower() for col in df.columns]
     return df
